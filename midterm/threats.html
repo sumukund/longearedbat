@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>threats page midterm</title>
+<link href="root/assets/styles/main.css" rel="stylesheet" type="text/css">
+<link href="root/assets/styles/pokemonbox.css" rel="stylesheet" type="text/css">
+
+
+<!-- SCRIPTS -->
+<script src="root/assets/js/homepage.js"></script>
+<!--- FONTS -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- begin loader -->
+<!-- end loader -->
+
+<!-- begin header -->
+<header class="header">
+  <div class="container">
+    <div class="header__left">
+      <div class="logo">
+		  <div class="logo__bats">BATS!</div>
+      </div>
+    </div>
+
+    <div class="header__right">
+      <nav class="nav">
+        <a class="is-active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="factsheet.html">FactSheet</a>
+        <a href="threats.html">Threats</a>
+		  <a href="takeaction.html">Take Action</a>
+		  <a href="citation.html">Citation</a>
+      </nav>
+
+     	<a class="explore" href="https://www.batcon.org/">BatCon</a>
+
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin hero -->
+<div class="hero">
+  <h2 class="hero__title">THREATS</h2>
+  <p class="paragraph"> Interview with Meg Loat: Vermont Department of Transporation coming soon! </p>
+	<div class="box"> 
+	<div id="typewriter"></div>
+  <script src="root/assets/js/typewriterjs-master/dist/core.js"></script>
+  <script>
+    const typewriter = new Typewriter('#typewriter', {
+      loop: false
+    });
+
+    typewriter.typeString('<strong>Sudarsna: </strong>')
+      .typeString('Hello how are you?')
+      .pauseFor(2500)
+      .typeString('<br/>')
+      .typeString('<strong>Meg: </strong>')
+      .typeString('I am fine thanks, how are you?')
+      .pauseFor(2500)
+      .typeString('<br/>')
+      .typeString('<strong>Sudarsna: </strong> ')
+      .typeString('I am great!')
+      .pauseFor(2500)
+      .start();
+  </script>
+
+		<button> </button>
+    </div>
+	
+  <div class="hero__action"> 
+    <a href="takeaction.html" class="hero__start"><img class="static" src="root/assets/media/bat.png" alt="bat png"> NEXT <img class="static" src="root/assets/media/bat.png" alt="bat png">
+</a>
+  </div>
+</div>
+<!-- end hero -->
+
+</body>
+</html>

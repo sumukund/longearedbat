@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face{
+  font-family: 'Advanced Pixel';
+  src: url("../fonts/AdvancedPixel7-2L9W.ttf") format("truetype");
+	
+}
+
+
+.box {
+  font-size: 24px;
+text-align: justify;
+  font-family: 'Advanced Pixel';
+  border-radius: 2px;
+  padding: 8px;
+  width: 400px;
+  height: auto;
+  line-height: 24px;
+  margin: 20px;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 0 1px 0 1px black,
+              inset 0 1px 0 1px black,
+              0 0 0 1px black,
+              inset 0 0 0 1px black;
+}
+.box > button {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: black;
+  margin-top: 0px;
+  animation:bounce 0.5s;
+  float: right;
+}
+
+@keyframes bounce {
+  from { margin-top: 20px; }
+  to { margin-top: 23px; }
+}
+
+

@@ -1,0 +1,488 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face{
+  font-family: 'Advanced Pixel';
+  src: url("../fonts/AdvancedPixel7-2L9W.ttf") format("truetype");
+	
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #D1B1F9;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+/* loader */
+.no-js #loader { display: none;  }
+
+.js #loader { display: block; position: absolute; left: 0px; top: 0;  width: 100%;
+	height: 100%;}
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../media/animations/finalbatcave.gif) no-repeat #000;
+	background-size: cover;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 45px 40px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo__bats {
+  border: 2px inset #f2f2f2;
+  display: inline-grid;
+	padding: 8px;
+  place-items: center;
+  font-size: 14px;
+  height: 45px;
+	background:linear-gradient(#e66465, #9198e5);
+  width: flex;
+  font-weight: 400;
+}
+
+.subtitle{
+	text-align: center;
+	display: block;
+	padding: inherit;
+	width: 100%;
+	
+}
+/* header */
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation */
+.nav {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  margin-left: 26px;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 8px;
+  /*   background: red; */
+}
+
+.nav a:hover,
+.nav a.is-active {
+  color: #DD8586;
+}
+
+@keyframes blink {
+    0%, 20% {
+        opacity: 0;
+    }
+    20%, 100% {
+        opacity: 1;
+    }
+}
+.nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #2addbc;
+  transform: translateX(-110%);
+  transition: transform 0.2s linear;
+}
+
+.nav a:hover::before,
+.nav a.is-active::before {
+  transform: translateX(0%);
+}
+
+.explore {
+  height: 35px;
+  font-size: 14px;
+  color: #dfe3ec;
+  border: 1px solid #abaeb7;
+  border-radius: 10px;
+  background: transparent;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* end header */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.hero__title{
+		font-size: 24px;
+		width: 50%;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+/* begin hero */
+.hero {
+  background-size: cover;
+  height: 100vh;
+  padding-top: 200px;
+  color: #000000;
+  line-height: 1.75;
+  text-align: center;
+  font-size: 16px;
+z-index: -1;
+}
+
+.hero__title {
+  font-size: 64px;
+font-family: 'Press Start 2P', cursive;
+  color: #000000;
+  line-height: 100%;
+  margin-bottom: 15px;
+z-index: -1;
+}
+
+.hero__title span {
+  display: inline-block;
+}
+
+.hero__action {
+  display: inline-block;
+text-align: justify;
+
+}
+
+.hero__start {
+  text-decoration: none;
+  border-bottom: 2px solid #2addbc;
+  padding: 0 16px 10px 16px;
+  color: #000000;
+
+}
+
+.hero__start:hover{
+	animation: 1s infinite blink;
+}
+
+/* paragraph */
+
+.static {
+  position: inline;
+  background: none;
+	height: 70px;
+	width: 70px;
+
+}
+
+.paragraph{
+	font-family: 'Advanced Pixel';
+	font-size: 36px;
+	letter-spacing: 1px;
+	margin: 20px;
+	padding:10px;
+	text-align: justify;
+}
+
+
+
+/* slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: inherit;
+  margin: auto;
+	padding: 15px;
+}
+
+/* hide the images by default */
+.slides {
+  display: none;
+}
+
+/* next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: inline;
+  top: 20%;
+  width: auto;
+  margin-top: -22px;
+  padding: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 34px;
+  transition: 0.45s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+
+/* next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover, change to color */
+.prev:hover, .next:hover {
+  background-color: #B27B8C;
+}
+
+/* caption */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 12px 12px;
+  position: inline;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* number text (1/4) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: inline;
+  top: 0;
+}
+
+/* dots */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover {
+  background-color: #B27B8C;
+}
+
+/* fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* image border styling */
+
+.imagecontainer{
+border: inset 10px #7F7F7F;
+
+}
+
+.hidebutton{
+	
+	border: groove 5px #797878;
+	margin: 10px;
+	padding: 10px;
+}
+
+/* rotate the homescreen */
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 4.5s ease-in-out forwards infinite;
+	margin: 1px 50px 50px 50px;
+	max-width: 100%;
+}
+
+/* For width 400px and smaller: */
+@media only screen and (max-width: 400px) {
+  .swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 4.5s ease-in-out forwards infinite;
+	margin: 1px 5px 5px 5px;
+	max-width: 50%;
+	}
+hr{
+	border: solid 2px #FFC324;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 4.5s ease-in-out forwards infinite;
+	margin: 1px 5px 5px 5px;
+	max-width: 50%;
+	}
+hr{
+	border: solid 2px #FFC324;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 4.5s ease-in-out forwards infinite;
+	margin: 1px 5px 5px 5px;
+	max-width: 50%;
+	}
+hr{
+	border: solid 2px #FFC324;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 4.5s ease-in-out forwards infinite;
+	margin: 1px 5px 5px 5px;
+	max-width: 50%;
+	}
+hr{
+	border: solid 2px #FFC324;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+
+/* iPad 3 (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio : 2),
+only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (min-resolution: 192dpi) { 
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	
+}
+
+/* Retina displays ----------- */
+@media  only screen 
+and (-webkit-min-device-pixel-ratio : 2), 
+only screen 
+and (min-resolution: 192dpi) {
+
+}
+/* styling the <hr> element to look like a tree branch */
+hr{
+	border: solid 7px #141212;
+
+}
