@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pareto</title>
+<link href="root/assets/styles/main.css" rel="stylesheet" type="text/css">
+<link href="root/assets/styles/table.css" rel="stylesheet" type="text/css">
+<link href="root/assets/styles/navbar.css" rel="stylesheet" type="text/css">
+<!-- SCRIPTS -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://github.com/cyberpython/AwesomeChartJS/blob/master/awesomechart.js"></script>
+		<script src="root/assets/js/pareto.js"></script>
+
+<!--- FONTS -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- begin loader -->
+<!-- end loader -->
+
+<!-- begin header -->
+<header>
+        <nav>
+		  <div class="logo__bats"><a href="index.html"> BATS!</a></div>
+  
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">about +</label>
+                    <a href="about.html">about</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="factsheet.html">facts</a></li>
+                        <li><a href="battable.html">tables</a></li>
+                        <li><a href="pareto.html">pareto</a></li>
+                    </ul> 
+
+                </li>
+
+				<li>
+				<label for="drop-2" class="toggle">threats +</label>
+                <a href="threats.html">threats</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="takeaction.html">take action</a></li>
+					<li><a href="citation.html">links</a></li>      
+			
+            </ul>
+				</li>
+				 <li><a href="contact.html">contact</a></li>
+                <!-- First Tier Drop Down -->
+                
+			</ul>
+        </nav>
+	
+
+</header>
+<!-- end header -->
+
+<!-- begin hero -->
+
+
+<div class="hero">
+  <div class="banner"><div><h2 class="hero__title">Pareto Chart</h2>
+	</div>
+
+</div>
+<div class="hero__action">
+	
+	<p class="paragraph"> In Vermont, the northern long-eared bat was once one of the State's most common bats, but is now its rarest (Vermont Fish and Wildlife Department (VFWD) 2014, in litt.). Prior to 2009, the species was found in 16 hibernacula, totaling an estimated 458 animals, which was thought to be an underestimate due to the species' preference for hibernating in hibernacula cracks and crevices (VFWD 2014, unpublished data). WNS was confirmed in Vermont in the winter of 2007-2008. According to the VFWD, it is believed that all of the State's caves and mines that serve as bat hibernacula are infected with WNS. State-wide hibernacula, summer mist-net, and acoustic and fall swarm data collected in 2010 documented 93-100 percent declines in northern long-eared bat populations post-WNS (VFWD 2014, in litt.). In most recent surveys, few northern long-eared bats were found in three hibernacula in 2012-2013; however no individuals were found in any surveyed hibernacula in 2013-2014 winter surveys. Prior to WNS detection, summer capture data (from 2001-2007) indicated that northern long-eared bats comprised 19 percent of bats captured, and the northern long-eared bat was considered the second most common bat species in the State (Smith 2011, unpublished data). As for fall swarm data, in 2013, capture surveys at Aeolus Cave captured and identified 465 bats, only 3 of which were northern long-eared bats (VFWD 2014, in litt.).</p>
+	<canvas id="canvas1" width="700" height="700">
+        Your web-browser does not support the HTML 5 canvas element.
+   
+	   <script type="application/javascript" src="root/assets/js/AwesomeChartJS-master/awesomechart.js"></script>
+                        
+    <script type="application/javascript">
+      function drawMyChart(){
+        if(!!document.createElement('canvas').getContext){ //check that the canvas
+                                                           // element is supported
+            var mychart = new AwesomeChart('canvas1');
+		 mychart.chartType = 'pareto';
+            mychart.title = "Table  1. ";
+            mychart.data = [21, 3, 27, 9,8, 5, 1 ];
+            mychart.labels = ["Pre-WNS", "2012",  "2013", "2014", "2015", "2016", "2017"];
+            mychart.draw();
+        }
+      }
+      
+      window.onload = drawMyChart;
+    </script>
+	    </canvas>
+<h3>Table 1</h3>
+	<p class="paragraph">Number  of  nights  sampled,  number  sites  surveyed,  and  occupied  sites  (sites  with  a northern long-eared bat detection) for each time period in the model. Pre-WNS includes the 5 years prior to presence of White-nose Syndrome in Georgia (2007-2011). Naïve occupancy rate was calculated as the number of sites occupied out of the total number of sites sampled in each year.</p>
+	
+	
+	<p class="paragraph">There  are  a  number  of  ways  to  determine  northern  long-eared  bat  habitat  use  and distribution; however, doing so is complicated by the severe mortality this species has experienced 
+within the last decade. Standard occupancy models that address habitat associations and detection 
+probability are static in time and invalid when the population is not in equilibrium (Mackenzie et 
+al. 2002), as is the case for northern long-eared bat populations in Georgia. Conversely, dynamic 
+occupancy  models  allow  for  colonization  and  extinction  between  years,  making  them  more 
+appropriate for determining occupancy before and after disease-related mortality events such as 
+WNS (Mackenzie et al. 2003). Using dynamic occupancy models allow us to identify landscape 
+components most vital to the long term persistence of northern long-eared bat populations</p>
+	<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj9kqC6xbXyAhXcMVkFHWelDms4FBAWegQIEhAB&url=https%3A%2F%2Frosap.ntl.bts.gov%2Fview%2Fdot%2F53884%2Fdot_53884_DS1.pdf&usg=AOvVaw2ib1HOK694JvG0VCMTbfJq"> Source: Determining the Distribution and Habitat Associations of the Northern Long-
+Eared Bat in North Georgia </a>
+	</div>
+    <a href="citation.html" class="hero__start"><img class="static" src="root/assets/media/bat.png" alt="bat png"> NEXT <img class="static" src="root/assets/media/bat.png" alt="bat png">
+</a>
+	</div>
+
+<!-- end hero -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

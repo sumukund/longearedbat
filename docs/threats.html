@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>threats page midterm</title>
+<!--STYLESHEETS-->
+<link href="root/assets/styles/main.css" rel="stylesheet" type="text/css">
+<link href="root/assets/styles/pokemonbox.css" rel="stylesheet" type="text/css">
+	<link href="root/assets/styles/navbar.css" rel="stylesheet" type="text/css">
+
+<!-- SCRIPTS -->
+<script src="root/assets/js/homepage.js"></script>
+<!--- FONTS -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- begin header -->
+<header>
+        <nav>
+		  <div class="logo__bats"><a href="index.html"> BATS!</a></div>
+  
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">about +</label>
+                    <a href="about.html">about</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="factsheet.html">facts</a></li>
+                        <li><a href="battable.html">tables</a></li>
+                        <li><a href="pareto.html">pareto</a></li>
+                    </ul> 
+
+                </li>
+
+				<li>
+				<label for="drop-2" class="toggle"> threats +</label>
+                <a href="threats.html">threats</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="takeaction.html">take action</a></li>
+					<li><a href="citation.html">links</a></li>      
+			
+            </ul>
+				</li>
+				 <li><a href="contact.html">contact</a></li>
+                <!-- First Tier Drop Down -->
+                
+			</ul>
+        </nav>
+	
+
+</header>
+<!-- end header -->
+
+<!-- begin hero -->
+<div class="hero">
+  <div class="banner"><div><h2 class="hero__title">Threats</h2>
+	</div>
+</div>
+  <p class="paragraph"> Interview with Meg Loat: Vermont Department of Transporation coming soon! </p>
+	<div class="box"> 
+	<div id="typewriter"></div>
+  <script src="root/assets/js/typewriterjs-master/dist/core.js"></script>
+  <script>
+    const typewriter = new Typewriter('#typewriter', {
+      loop: false
+    });
+
+    typewriter.typeString('<strong>Sudarsna: </strong>')
+      .typeString('Hello how are you?')
+      .pauseFor(2500)
+      .typeString('<br/>')
+      .typeString('<strong>Meg: </strong>')
+      .typeString('I am fine thanks, how are you?')
+      .pauseFor(2500)
+      .typeString('<br/>')
+      .typeString('<strong>Sudarsna: </strong> ')
+      .typeString('I am great!')
+      .pauseFor(2500)
+      .start();
+  </script>
+
+		<button> </button>
+    </div>
+	
+  <div class="hero__action"> 
+    <a href="takeaction.html" class="hero__start"><img class="static" src="root/assets/media/bat.png" alt="bat png"> NEXT <img class="static" src="root/assets/media/bat.png" alt="bat png">
+</a>
+  </div>
+</div>
+<!-- end hero -->
+
+</body>
+</html>

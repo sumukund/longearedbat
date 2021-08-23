@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>contact</title>
+<!-- STYLESHEETS-->
+<link href="root/assets/styles/main.css" rel="stylesheet" type="text/css">
+<link href="root/assets/styles/navbar.css" rel="stylesheet">	
+<!-- SCRIPTS -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="root/assets/js/navdropdown.js"></script>
+<script type="text/javascript">
+        function IsValidZipCode(zip) {
+            var isValid = /^[0-9]{5}(?:-[0-9]{4})?$/.test(zip);
+            if (isValid)
+                alert('Valid ZipCode');
+            else {
+                alert('Invalid ZipCode');
+            }
+        }
+    </script>
+
+<!--- FONTS -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- begin loader -->
+<!-- end loader -->
+
+<!-- begin header -->
+<header>
+        <nav>
+		  <div class="logo__bats"><a href="index.html"> BATS!</a></div>
+  
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">about +</label>
+                    <a href="about.html">about</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="factsheet.html">facts</a></li>
+                        <li><a href="battable.html">tables</a></li>
+                        <li><a href="pareto.html">pareto</a></li>
+                    </ul> 
+
+                </li>
+
+				<li>
+				<label for="drop-2" class="toggle"> threats +</label>
+                <a href="threats.html">threats</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="takeaction.html">take action</a></li>
+					<li><a href="citation.html">links</a></li>      
+			
+            </ul>
+				</li>
+				 <li><a href="contact.html">contact</a></li>
+                <!-- First Tier Drop Down -->
+                
+			</ul>
+        </nav>
+	
+
+</header>
+<!-- end header -->
+
+<!-- begin hero -->
+<div class="hero">
+<hr>
+<img src="root/assets/media/babybat.png" class="swingimage" width="100" height="100" alt="baby bat" />
+
+<img src="root/assets/media/babybat.png" class="swingimage" width="100" height="100" alt="baby bat"/>
+
+<img src="root/assets/media/babybat.png" class="swingimage" width="100" height="100" alt="baby bat"/>
+
+
+
+  <h2 class="hero__title">CONTACT</h2>
+	<p> YOU WON! </p>
+	
+
+   <div id="container">  
+  <form id="contact" action="" method="post">
+    <h3>Bats Need YOU!</h3>
+    <h4>Contact for more information about the NLEB</h4>
+    <fieldset>
+      <input style="text-transform: uppercase;" placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+	  <fieldset>
+      <input style="text-transform: uppercase;" placeholder="City" type="text" tabindex="1" required>
+    </fieldset>
+	  <fieldset> <input type="text" name="zip" maxlength="10" placeholder="Enter Zip Code"></fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+	  <button type="submit" value="Validate Zipcode" 
+			  onclick="IsValidZipCode(this.form.zip.value)"> Validate Zipcode </button>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+  
+  
+  <div class="hero__action"> 
+    <a href="index.html" class="hero__start"><img class="static" src="root/assets/media/bat.png" alt="bat png"> PRESS START <img class="static" src="root/assets/media/bat.png" alt="bat png">
+</a>
+	</div>
+</div>
+
+<!-- end hero -->
+</body>
+</html>
+
+

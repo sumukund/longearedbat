@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Factsheet</title>
+<link href="root/assets/styles/main.css" rel="stylesheet" type="text/css">
+	<link href="root/assets/styles/navbar.css" rel="stylesheet" type="text/css">
+
+<!-- SCRIPTS -->
+	<script src="//code.jquery.com/jquery-1.12.2.min.js"></script>
+<script src="root/assets/js/hideaway.js"></script>
+<!--- FONTS -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- begin loader -->
+<!-- end loader -->
+
+<!-- begin header -->
+<header>
+        <nav>
+		  <div class="logo__bats"><a href="index.html"> BATS!</a></div>
+  
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">about +</label>
+                    <a href="about.html">about</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="factsheet.html">facts</a></li>
+                        <li><a href="battable.html">tables</a></li>
+                        <li><a href="pareto.html">pareto</a></li>
+                    </ul> 
+
+                </li>
+
+				<li>
+				<label for="drop-2" class="toggle"> threats +</label>
+                <a href="threats.html">threats</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="takeaction.html">take action</a></li>
+					<li><a href="citation.html">links</a></li>      
+			
+            </ul>
+				</li>
+				 <li><a href="contact.html">contact</a></li>
+                <!-- First Tier Drop Down -->
+                
+			</ul>
+        </nav>
+	
+
+</header>
+<!-- end header -->
+
+<!-- begin hero -->
+<div class="hero">
+  <div class="banner"><div><h2 class="hero__title">Factsheet</h2>
+	</div>
+
+</div>
+	
+<h3 class="hero__action">click on each gif to learn more! </h3>
+	<h3 class="subtitle"> Range </h3>
+	<a onClick="myFunction()"><img class="imagecontainer" src="root/assets/media/animations/animatedmap.gif" alt ="animated map gif"> </a> <div id="hideaway" style="display:none;">
+	<p class= "paragraph">
+    The northern long-eared bat’s range includes much of the eastern and north central United States, and all Canadian provinces from the Atlantic Ocean west to the southern Yukon Territory and eastern British Columbia. The species’ range includes the following 37 States and the District of Columbia: Alabama, Arkansas, Connecticut, Delaware, Georgia, Illinois, Indiana, Iowa,  Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, New Hampshire, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Vermont, Virginia, West Virginia, Wisconsin, and Wyoming. 
+  </p>
+	<a class="hidebutton" onClick="document.getElementById('hideaway').style.display='none';">Hide content again</a>
+	</div>
+	
+<h3> <br><br>Appearance</h3>
+<a onClick="myFunction2()"><img width="450" height="500" class="imagecontainer" src="root/assets/media/poster.jpg" alt ="Poster"></a> <div id="hideaway2" style="display:none;">
+ <p class="paragraph">The northern long-eared bat is a medium-sized bat with a body length of 3 to 3.7 inches but a wingspan of 9 to 10 inches.  Their fur color can be medium to dark brown on the back and tawny to pale-brown on the underside.  As its name suggests, this bat is distinguished by its long ears, particularly as compared to other bats in its genus, Myotis.</p>
+	<a class="hidebutton" onClick="document.getElementById('hideaway2').style.display='none';">Hide content again</a>
+	</div>
+	
+
+
+	<h3><br><br>Feeding Habits:</h3>
+	<a onClick="myFunction3()"><img class="imagecontainer" src="root/assets/media/animations/batwins.gif" alt ="bat wins gif"> </a> <div id="hideaway3" style="display:none;">
+	<p class="paragraph"> Like most bats, northern long-eared bats emerge at dusk to feed.  They primarily fly through the understory of forested areas feeding on moths, flies, leafhoppers, caddisflies, and beetles, which they catch while in flight using echolocation or by gleaning motionless insects from vegetation. </p>
+	<a class="hidebutton" onClick="document.getElementById('hideaway3').style.display='none';">Hide content again</a>
+	
+	</div>
+	
+	<div> 
+    <a href="threats.html"><img class="static" src="root/assets/media/bat.png" alt="bat png"> NEXT <img class="static" src="root/assets/media/bat.png" alt="bat png">
+</a>
+ 
+</div>
+	 
+	</div>
+<!-- end hero -->
+</body>
+</html>
